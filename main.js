@@ -1,3 +1,4 @@
+const navbar = document.querySelector(".navbar");
 const menu = document.querySelector(".navbar__menu");
 const toggleBtn = document.querySelector(".navbar__toggleBtn");
 const cancelBtn = document.querySelector(".navbar__cancelBtn");
@@ -10,6 +11,10 @@ toggleBtn.onclick = ()=>{
 cancelBtn.onclick = ()=>{
   menu.classList.remove("active");
   toggleBtn.classList.remove("hide");
+}
+
+window.onscroll = ()=>{
+  this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
 
 // Brand Logo Swiper

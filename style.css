@@ -14,7 +14,8 @@ html {
   --header4: calc(2.4rem + 1vw);
   --text: calc(1.5rem + 1vw);
   --big: calc(6rem + 1vw);
-  --small-text: calc(1.5rem + 0.3vw);
+  --small-text: calc(1.8rem + 0.3vw);
+  --extra-small-text: calc(1.5rem + 0.3vw);
   --white-color: #f8f1f1;
   --black-color: #263238;
   --orange-color: #ff914d;
@@ -88,12 +89,12 @@ main {
 }
 /***Navbar style***/
 .navbar {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background: var(--white-color);
-  position: fixed;
   min-height: 10vh;
   z-index: 2;
   padding-top: 1rem;
@@ -253,6 +254,47 @@ main {
   margin-bottom: 2rem;
 }
 
+/***Our story page***/
+.our-stroy-banner {
+  min-height: 50vh;
+  width: 100%;
+  background: url(./assets/our_story/our-story-banner.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5rem;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.about-us .our-story-text {
+  flex: 1 1 40rem;
+  padding-right: 2rem;
+}
+
+.about-us .our-story-text h4 {
+  margin-bottom: 3rem;
+}
+
+.about-us .our-story-text p {
+  margin-bottom: 4rem;
+  font-size: var(--small-text);
+}
+
+.about-us .our-story-photo {
+  flex: 1 1 40rem;
+}
+
+.about-us .our-story-photo img {
+  display: block;
+  width: 100%;
+}
+
 /***Footer***/
 footer {
   position: relative;
@@ -260,7 +302,7 @@ footer {
   width: 100%;
   background: var(--white-color);
   padding: 5rem var(--main-padding);
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 
 .footer-content {
@@ -300,7 +342,7 @@ footer {
 }
 
 .left .content li a {
-  font-size: var(--small-text);
+  font-size: var(--extra-small-text);
 }
 
 .left .content li a:hover {
@@ -327,7 +369,7 @@ footer {
 }
 
 .right .content .text {
-  font-size: var(--small-text);
+  font-size: var(--extra-small-text);
   padding-left: 1rem;
   color: var(--black-color);
 }
@@ -352,7 +394,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   main {
-    padding: 0rem 1rem;
+    padding: 0rem 2rem;
   }
   /***Responsive navbar style***/
   .navbar {
@@ -426,9 +468,15 @@ footer {
     height: 25rem;
   }
 
+  /***Responsive our story page***/
+  .about-us .our-story-text {
+    padding: 0rem 0rem;
+    text-align: center;
+  }
+
   /***Responsive footer***/
   footer {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
   .footer-content {
     flex-wrap: wrap;
