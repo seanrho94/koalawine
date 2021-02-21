@@ -24,11 +24,11 @@
       <div class="navbar__cancelBtn">
         <i class="fas fa-times"></i>
       </div>
-      <li><a href="./about-us.html">OUR STORY</a></li>
-      <li><a href="./brands.html">BRANDS</a></li>
+      <li><a href="./about-us.html" class="fancy-link">OUR STORY</a></li>
+      <li><a href="./brands.html" class="fancy-link">BRANDS</a></li>
       <li class="navbar__logo"><a href="./index.html"><img src="./assets/logo.png" alt="navbar__logo" class="logo__img"></a></li>
-      <li><a href="./products.html">PRODUCTS</a></li>
-      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./products.html" class="fancy-link">PRODUCTS</a></li>
+      <li><a href="./contact.html" class="fancy-link">CONTACT</a></li>
     </ul>
     <div class="navbar__toggleBtn">
       <i class="fas fa-bars"></i>
@@ -44,6 +44,9 @@
     <!-- Brand Section -->
     <section class="brands">
       <h4 class="section-title">Our Brands</h4>
+      <div class="view-all-link-container">
+        <a href="./brands.html" class="view-all-link">VIEW ALL BRANDS</a>
+      </div>
     </section>
       <!-- Brand Logo Swiper -->
       <div class="swiper-container brand-swiper-container">
@@ -72,42 +75,44 @@
       <div class="swiper-pagination brand-swiper-pagination"></div>
     </div>
     <hr>
+        <!-- Products section -->
+    <section class="products">
+      <h4 class="section-title">Products</h4>
+      <div class="view-all-link-container">
+        <a href="./products.html" class="view-all-link">VIEW ALL PRODUCTS</a>
+      </div>
+      <div class="product-grid">
+        <div class="product-container">
+          <div class="product-img">
+            <img src="./assets/products/product4.png" alt="product4">
+          </div>
+          <div class="product-content">
+            <h4>2017 CLARE'S SECRET RIESLING</h4>
+            <p>Warm days. Cool nights. Outstanding wines.  It's really no secret why Clare Valley is one of Australia's most renowned wine regions.</p>
+          </div>
+        </div>
 
-    <!-- Products section -->
-<section class="products">
-  <h4 class="section-title">Products</h4>
-  <div class="product-grid">
-    <div class="product-container">
-      <div class="product-img">
-        <img src="./assets/product1.png" alt="product1">
-      </div>
-      <div class="product-content">
-        <h4>2017 CLARE'S SECRET RIESLING</h4>
-        <p>Warm days. Cool nights. Outstanding wines.  It's really no secret why Clare Valley is one of Australia's most renowned wine regions.</p>
-      </div>
-    </div>
+        <div class="product-container">
+          <div class="product-img">
+            <img src="./assets/products/product5.png" alt="product5">
+          </div>
+          <div class="product-content">
+            <h4>RTISTE CABERNET MERLOT 2015</h4>
+            <p>The best elements of both the Cabernet and the Merlot combine to create a distinctively fresh and smooth drinking experience.</p>
+          </div>
+        </div>
 
-    <div class="product-container">
-      <div class="product-img">
-        <img src="./assets/product2.png" alt="product2">
+        <div class="product-container">
+          <div class="product-img">
+            <img src="./assets/products/product6.png" alt="product6">
+          </div>
+          <div class="product-content">
+            <h4>2019 THE IMPRESSIONIST TEMPRANILLO</h4>
+            <p>Pumped over twice daily for 7 days before pressed off to seasoned french oak hogshead and aged for 15 months.</p>
+          </div>
+        </div>
       </div>
-      <div class="product-content">
-        <h4>RTISTE CABERNET MERLOT 2015</h4>
-        <p>The best elements of both the Cabernet and the Merlot combine to create a distinctively fresh and smooth drinking experience.</p>
-      </div>
-    </div>
-
-    <div class="product-container">
-      <div class="product-img">
-        <img src="./assets/product3.png" alt="product3">
-      </div>
-      <div class="product-content">
-        <h4>2019 THE IMPRESSIONIST TEMPRANILLO</h4>
-        <p>Pumped over twice daily for 7 days before pressed off to seasoned french oak hogshead and aged for 15 months.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
     <hr>
 
     <!-- Image gallery section -->
@@ -142,6 +147,40 @@
           </div>
         </div>
     </section>
+    <hr>
+
+    <section class="ethos">
+      <h4 class="section-title">Our ethos</h4>
+      <div class="ethos-container">
+        <div class="etho-box">
+          <div class="etho-img">
+            <img src="./assets/etho1.png" alt="ethos1">
+          </div>
+          <div class="etho-content">
+            <p>We support fair trade in business and our products are sourced and obtained in a responsible and sustainable manner for all parties involved in the process.</p>
+          </div>
+        </div>
+
+        <div class="etho-box">
+          <div class="etho-img">
+            <img src="./assets/etho2.png" alt="ethos2">
+          </div>
+          <div class="etho-content">
+            <p>The wines we choose are from boutique brands and are produced in limited quantities each year by small producers with their own vineyards.</p>
+          </div>
+        </div>
+
+        <div class="etho-box">
+          <div class="etho-img">
+            <img src="./assets/etho3.png" alt="ethos1">
+          </div>
+          <div class="etho-content">
+            <p>All our products are carefully picked to suit every season.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -161,9 +200,9 @@
         <h4>FOLLOW</h4>
         <div class="content">
           <div class="social">
-            <a href="#"><span class="fab fa-facebook-f"></span></a>
-            <a href="#"><span class="fab fa-twitter"></span></a>
-            <a href="#"><span class="fab fa-instagram"></span></a>
+            <a target="_blank" href="https://www.facebook.com/"><span class="fab fa-facebook-f"></span></a>
+            <a target="_blank" href="https://twitter.com/"><span class="fab fa-twitter"></span></a>
+            <a target="_blank" href="https://www.instagram.com/"><span class="fab fa-instagram"></span></a>
           </div>
         </div>
       </div>
