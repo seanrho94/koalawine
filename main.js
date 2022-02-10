@@ -18,7 +18,7 @@ window.onscroll = ()=>{
 }
 
 // Brand Logo Swiper
-var brandSwiper = new Swiper('.brand-swiper-container', {
+let brandSwiper = new Swiper('.brand-swiper-container', {
   slidesPerView: 1,
   spaceBetween: 40,
   loop: true,
